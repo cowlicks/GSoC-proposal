@@ -1,19 +1,29 @@
 ## Student Information
 
 Name: Blake Griffith
+
 Email: Blake.g@utexas.edu
+
 Telephone: (713) 702-1366
-IRC handle including network: cowlicks@irc.freenode.net. I'm in the SciPy channel.
+
+IRC handle including network: cowlicks@irc.freenode.net. I'm in the SciPy channel too.
+
 Source control username: cowlicks on Github
+
 Twitter: cwlcks
+
 Home Page: http://cwl.cx
+
 Blog: http://cwl.cx
 
 ## University Information
 
 University: The University of Texas at Austin
+
 Major: double major math and physics
+
 Current Year and Expected Graduation date: Senior, graduating December of 2013
+
 Degree: I'll be graduating with two degrees, B.S. Math and Physics
 
 ## Project Proposal Information
