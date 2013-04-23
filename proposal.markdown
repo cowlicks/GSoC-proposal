@@ -2,7 +2,7 @@
 
 Name: Blake Griffith
 
-Email: Blake.g@utexas.edu
+Email: Blake.a.griffith@gmail.com
 
 Telephone: (713) 702-1366
 
@@ -29,9 +29,23 @@ Degree: I'll be graduating with two degrees, B.S. Math and Physics
 
 The project has two main parts, adding support for the bool dtype, and having better interaction with numpy. Adding bool support will start by writing a specification, implementing it along with a test suite. After this, attention will turn to Sparse Matrices interactions with other python/numpy types. The goal is functional parity with numpy's ndarrays and matrix objects.
 
-(A short description of your proposed project)
-Proposal Detailed Description (*)
-(please include timeline with milestones, preferably weekly ones. You may wish to read http://www.booki.cc/gsocstudentguide/ which includes several examples of good proposals with timelines, or our own information at http://wiki.python.org/moin/SummerOfCode/Application)
+### Timeline
+* pre due date May3
+* App to start time May3 to code start 
+* weekly timeline 
+
+### weekly detail 
+* bool spec, spec with how other types should be handled.
+* modify c routines 
+* testing suite
+
+* numpy types handling 
+* returning numpy types
+    * mat mult with numpy type
+    * comparison with numpy type
+* returning sparse matrices
+    * mult or div with vector like things.
+    * comparison with scalar like things.
 
 ### Previous work with SciPy
 
@@ -39,6 +53,11 @@ Proposal Detailed Description (*)
 * [My proposed specification for boolean data type handling](https://github.com/cowlicks/scipy-sparse-boolean-spec)
 
 
+### Questions
+Balance between selling the project and selling my ability to complete the project.
+I'm assuming a well done project proposal will imply my competence.
+
+### Aplication tips
 Links to additional information
 (e.g. other projects, resources, code you've written, relevant information. You may wish to include a link to your resume here to help mentors evaluate your experience level.)
 Other Schedule Information
