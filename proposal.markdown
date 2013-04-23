@@ -6,15 +6,13 @@ Email: Blake.g@utexas.edu
 
 Telephone: (713) 702-1366
 
-IRC handle including network: cowlicks@irc.freenode.net. I'm in the SciPy channel too.
+IRC: cowlicks@irc.freenode.net. I'm in #scipy.
 
-Source control username: cowlicks on Github
+I do my version control as [cowlicks on GitHub](https://github.com/cowlicks)
 
-Twitter: cwlcks
+[Twitter](https://twitter.com/cwlcks)
 
-Home Page: http://cwl.cx
-
-Blog: http://cwl.cx
+[Blog / homepage](http://cwl.cx)
 
 ## University Information
 
@@ -26,11 +24,11 @@ Current Year and Expected Graduation date: Senior, graduating December of 2013
 
 Degree: I'll be graduating with two degrees, B.S. Math and Physics
 
-## Project Proposal Information
+## Improving the Sparse Matrix package in Scipy
+### Abstract
 
-### Improving the Sparse Matrix package in Scipy
-(The name of your proposal. This should explain in a few words what you plan to do and include the name of your sub-org. e.g. "Mailman: OpenPGP Integration" or "SunPy: Improvements to Mapcube and Image Registration.")
-Proposal Abstract (*)
+The project has two main parts, adding support for the bool dtype, and having better interaction with numpy. Adding bool support will start by writing a specification, implementing it along with a test suite. After this, attention will turn to Sparse Matrices interactions with other python/numpy types. The goal is functional parity with numpy's ndarrays and matrix objects.
+
 (A short description of your proposed project)
 Proposal Detailed Description (*)
 (please include timeline with milestones, preferably weekly ones. You may wish to read http://www.booki.cc/gsocstudentguide/ which includes several examples of good proposals with timelines, or our own information at http://wiki.python.org/moin/SummerOfCode/Application)
