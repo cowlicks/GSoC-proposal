@@ -36,16 +36,21 @@ The project has two main parts, adding support for the bool dtype, and having be
 
 ### weekly detail 
 * bool spec, spec with how other types should be handled.
-* modify c routines 
+* sparsetools/*.h improvement
+    * bool comparisons
+    * return different types
 * testing suite
+
 
 * numpy types handling 
 * returning numpy types
     * mat mult with numpy type
     * comparison with numpy type
 * returning sparse matrices
-    * mult or div with vector like things.
-    * comparison with scalar like things.
+    * operations with scalars
+    * operations with vector types
+    * operations with matrix type
+    
 
 ### Previous work with SciPy
 
