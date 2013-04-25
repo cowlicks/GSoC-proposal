@@ -42,7 +42,7 @@ The Sparse package of Scipy is used in several other packages, and a quick searc
 
 #### Pre application. Up to May 3rd.
 * Familiarizing myself with scipy.sparse by investigating bug reports, reading documentation, 
-* Building repor with the Scipy community and my mentor.
+* Building rapport with the Scipy community and my mentor.
 * Writing this document.
 
 #### Pre official start. May 3rd - May27.
@@ -114,21 +114,10 @@ Use my now vast knowledge of Scipy to be a productive member of the community, m
     
 
 ### Additional info about myself
+Short paragraph, like would be on a cover letter.
 
 previous work with SciPy:
 * [Improvements to the multiply method in scipy.sparse](https://github.com/scipy/scipy/pull/516)
 * [My proposed specification for boolean data type handling](https://github.com/cowlicks/scipy-sparse-boolean-spec)
 
-
-### Questions
-Balance between selling the project and selling my ability to complete the project.
-I'm assuming a well done project proposal will imply my competence.
-
-### Aplication tips
-Links to additional information
-(e.g. other projects, resources, code you've written, relevant information. You may wish to include a link to your resume here to help mentors evaluate your experience level.)
-Other Schedule Information
-
-The information requested above is generally required for us to be able to contact you and evaluate your proposal. Please feel free to add information to this template and to format it in whatever way you think will be most effective in conveying your intentions. You may wish to check with your sub-organization to see if they have any additional requirements.
-
-We strongly recommend that you join the respective IRC channels for the sub-organizations you are applying to, and any relevant development mailing lists to the projects you are interested in working on to learn more about the community. You may wish to get your prospective mentors to read your proposals in advance so they can help you refine them.
+Link to CV
