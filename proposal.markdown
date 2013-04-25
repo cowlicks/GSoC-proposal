@@ -36,7 +36,7 @@ Next, attention will turn to Sparse Matrices interactions with other python/nump
 Finally when Sparse Matrices are playing nice with numpy and python types. Spares features will be added to achieve parity with numpy types. Priority will first be given to the Compressed Sparse Row (csr) and Compressed Sparse Column (csc) types then Lists of Lists (lil) then all other types. The goal is functional parity with numpy's ndarrays and matrix objects.
 
 ### Motivation
-The Sparse package of Scipy is used in several other packages, and a quick search of [Stackoverflow](http://stackoverflow.com/search?tab=newest&q=[scipy]%20sparse) will demonstrate that it needs work, and that there are several feature users would like.
+The Sparse package of Scipy is used extensively by other packages such as [Scikit-Learn](http://scikit-learn.org/stable/), and integrated with [SymPy](), [Sage](), and [Numpy](), but a quick search of [Stackoverflow](http://stackoverflow.com/search?tab=newest&q=[scipy]%20sparse) or the scipy issues page will demonstrate that it needs work, and that there are several feature users would like.
 
 ### Timeline
 
