@@ -45,40 +45,45 @@ The Sparse package of Scipy is used extensively by other packages such as [Sciki
 * Building rapport with the Scipy community and my mentor.
 * Writing this document.
 
-#### Pre official start. May 3rd - May27.
+#### Pre-official start. May 3rd - May27.
 * Get a head start (my last day of school is May 3rd.)
+* Query the community for feedback in regards to bool handling specification, numpy/python type handling specification, and additional features they would like to see in sparse.
 * Submit my proposal for bool handling specification to the community. Get feedback, alter as needed until some consensus is reached.
 * Write numpy type parity specification. How should numpy objects be handled by sparse functions? How should Sparse matrices be handled by Numpy functions? What can and cannot be expected to be on par for sparse matirices? What should just be done as spmatrix.toarray().numpymethod()? What sparse methods should return sparse matrices?
 
-#### Weekly timeline May 27th
+#### Timeline
+I've broken the 3 pieces of my proposal up into 3 equally size blocks of time +/- one week.
 (I will probably start writing code before the *official start*)
-* Week of May 27th
+* Monday May 27th -- Start bool handling
     * Begin implementing bool operations portion of the specification in sparsetools/\*.h .
     * Implement bool type handling part of the specification.
     * Write tests for bool specification.
-* Week of June 3rd
-    * Continue work on implementing bool spec.
-    * Get all the tests passing.
-* Week of June 10th
-    * 
-* Week of June 17th
-* Week of June 24th
+* Week of June 17th -- Wrap up bool handling.
+    * All unit tests passing
+    * Code commited
+    * Documentation complete
+* Monday June 24th -- Start type handling!
+    * type handling
 * Week of July 1st
 * Week of July 8th
 * Week of July 15th
+    * wrap up type handling
 * Week of July 22nd
-* Week of July 29th
-    * Submit mid-term evaluation! 
+    * new methods, features etc.
+    * Start with csc, and csr.
+* July 29th -- Submit mid-term evaluation! 
 * Week of August 5th
 * Week of August 12th
 * Week of August 19th
+    * wrap up new features?
 * Week of August 26th
     * My school begins on August 29th, so I'll cut work to around 1/3 to 1/4 of before
+    * Continue with features, bugs etc for the remaining weeks. slow pace.
 * Week of September 2nd
 * Week of September 9th
-* Week of September 16th
-    * Pencils Down!
-* Bonus points
+* September 23rd -- Final evaluation!
+
+* Bonus points!
     * Specify how to add new sparse matrix types to the existing zoo.
 #### Onward -- After Sept 16th
 Use my now vast knowledge of Scipy to be a productive member of the community, maybe one day even receiving the honor of commit rights.
