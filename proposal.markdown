@@ -17,11 +17,13 @@ I do my version control as [cowlicks on GitHub](https://github.com/cowlicks)
 [Blog / homepage](http://cwl.cx)  
 
 ### About me
-I've been programming using the SciPy/Numpy for around 3 years for reasearch and homework assingnments and have always wanted 
-
+I've been programming using the SciPy/Numpy for around 3 years for reasearch and homework assingnments and have always wanted to give back.
 previous work with SciPy:
 * [Improvements to the multiply method in scipy.sparse](https://github.com/scipy/scipy/pull/516)
-* [My proposed specification for boolean data type handling](https://github.com/cowlicks/scipy-sparse-boolean-spec)
+
+There are a lot of projects on [my GitHub](https://github.com/cowlicks), many incomplete, here are a select few:
+* Townes profile
+* ??
 
 [CV](cwl.cx/cv.pdf)
 
