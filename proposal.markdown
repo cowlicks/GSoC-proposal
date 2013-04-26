@@ -14,6 +14,15 @@ I do my version control as [cowlicks on GitHub](https://github.com/cowlicks)
 
 [Blog / homepage](http://cwl.cx)
 
+### About me
+Short paragraph, like would be on a cover letter.
+
+previous work with SciPy:
+* [Improvements to the multiply method in scipy.sparse](https://github.com/scipy/scipy/pull/516)
+* [My proposed specification for boolean data type handling](https://github.com/cowlicks/scipy-sparse-boolean-spec)
+
+Link to CV
+
 ## University Information
 
 University: The University of Texas at Austin
@@ -25,18 +34,18 @@ Current Year and Expected Graduation date: Senior, graduating December of 2013
 Degree: I'll be graduating with two degrees, B.S. Math and Physics
 
 ## Improving the Sparse Matrix package in Scipy
-### Abstract
 
-The project has three main parts, adding support for the bool dtype, having better interaction with numpy and python types, and adding features which numpy ndarray and matrices have. 
+The project has three main parts:  adding support for the bool dtype, having better interaction with numpy and python types, and adding features which numpy ndarray and matrices have. 
 
-Adding bool support will start with writing a specification, implementing it along with a test suite. 
+Adding bool support will start with writing a specification, then implementing it along with a test suite. Currently sparse matrices behave irratically when `dtype=bool`, this will adress that (see [issue #1533](http://projects.scipy.org/scipy/ticket/1533). Sparse matrices also have unexpected results with boolean operators. When two sparse matrices are compared a single True or False is returned, this is inconsistent with the way NumPy arrays are compared. 
 
-Next, attention will turn to Sparse Matrices interactions with other python/numpy types. Again a specification will be drafted, then implemented along with a test suite. 
+Next, attention will turn to Sparse Matrices interactions with other python/numpy types. Again a specification will be drafted, then implemented along with a test suite. [Issue #1042](http://projects.scipy.org/scipy/ticket/1533) is an example of how NumPy's universal functions just don't work with the sparse matrices *TODO add link to failing tests*. Fixing this will probably require a patch to NumPy to do better checking for sparse types, as well as modifications to base classes in sparse matrices. There are also issues with sparse matrices and python types *TODO*
 
-Finally when Sparse Matrices are playing nice with numpy and python types. Spares features will be added to achieve parity with numpy types. Priority will first be given to the Compressed Sparse Row (csr) and Compressed Sparse Column (csc) types then Lists of Lists (lil) then all other types. The goal is functional parity with numpy's ndarrays and matrix objects.
+Finally when Sparse Matrices are playing nice with numpy and python types. Sparse features will be added which ndarrays have but sparse matrices do not. Like calling `.min()` or `.max()` along a give axis. Priority will first be given to the Compressed Sparse Row (csr) and Compressed Sparse Column (csc) types then Lists of Lists (lil) then all other types. The goal is functional parity with numpy's ndarrays and matrix objects. There are 
 
 ### Motivation
-The Sparse package of Scipy is used extensively by other packages such as [Scikit-Learn](http://scikit-learn.org/stable/), and integrated with [SymPy](), [Sage](), and [Numpy](), but a quick search of [Stackoverflow](http://stackoverflow.com/search?tab=newest&q=[scipy]%20sparse) or the scipy issues page will demonstrate that it needs work, and that there are several feature users would like.
+The Sparse package of Scipy is used extensively by other packages such as [Scikit-Learn](http://scikit-learn.org/stable/), and is integrated with [SymPy](), [Sage](), and [Numpy](), but a quick search of [Stackoverflow](http://stackoverflow.com/search?tab=newest&q=[scipy]%20sparse) or the scipy issues page will demonstrate that it needs work, and that there are several feature users would like.
+
 
 ### Timeline
 
@@ -69,11 +78,13 @@ I've broken the 3 pieces of my proposal up into 3 equally size blocks of time +/
 * Wrap up type handling
 
 #### Week of July 22nd -- new methods, features etc.
-* Start with csc, and csr.
+* Add ability to call .min() and .max() along an axis.
+
 #### July 29th -- Submit mid-term evaluation! 
-* Week of August 5th
-* Week of August 12th
-* Week of August 19th
+* At this point, I expect to have:
+    * Implemented boolean specification, along with tests and documentation.
+    * Fixed the interactions with NumPy universal functions to behave according to the specification, along with assosciated tests and documentation.
+    * started features.
 
 #### Week of August 26th -- Wrap up new features!
 * My school begins on August 29th, so I'll cut work to around 1/3 to 1/4 of before
@@ -117,11 +128,3 @@ Use my now vast knowledge of Scipy to be a productive member of the community, m
     * operations with matrix type
     
 
-### Additional info about myself
-Short paragraph, like would be on a cover letter.
-
-previous work with SciPy:
-* [Improvements to the multiply method in scipy.sparse](https://github.com/scipy/scipy/pull/516)
-* [My proposed specification for boolean data type handling](https://github.com/cowlicks/scipy-sparse-boolean-spec)
-
-Link to CV
