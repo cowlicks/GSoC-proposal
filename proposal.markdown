@@ -22,10 +22,10 @@ previous work with SciPy:
 * [Improvements to the multiply method in scipy.sparse](https://github.com/scipy/scipy/pull/516)
 
 There are a lot of projects on [my GitHub](https://github.com/cowlicks), many incomplete, here are a select few:
-* Townes profile solution.
-* Blog post about data analysis in python.
+* [Townes profile solution](https://github.com/cowlicks/Townes_profile).
+* [some data analysis scripts](https://github.com/cowlicks/2dnls-scripts/tree/master/analysis)
 
-[CV](cwl.cx/cv.pdf)
+[CV](https://github.com/cowlicks/CV/raw/master/curriculum_vitae.pdf)
 
 ## University Information
 University: The University of Texas at Austin  
@@ -65,7 +65,7 @@ In order:
 * Final evaluation, Sept 23rd -- deliverables are:
    * bool spec implemented
    * NumPy interaction spec implemented.
-* Use my now vast knowledge of Scipy to be a productive member of the community, maybe one day even receiving the honor of commit rights.
+* Use my now vast knowledge of Scipy to be a productive member of the community. 
 
 #### bonus
 * Write spec for how to add new sparse matrix types to the existing zoo.
