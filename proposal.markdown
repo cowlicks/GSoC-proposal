@@ -1,4 +1,6 @@
-# Short description
+#Improvements to the sparse package of Scipy: support for bool dtype and better interaction with NumPy
+
+##Abstract
 This proposal has two parts:
 
 1. Add support for bool dtype to sparse matrices, as well as boolean operations so that sparse matrices behave more like NumPy ndarrays.
