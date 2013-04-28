@@ -11,8 +11,6 @@ Both of these will be implemented according to separate specifications (written 
 
 ## Student Information
 Name: Blake Griffith  
-Email: Blake.a.griffith@gmail.com  
-Telephone: (713) 702-1366  
 IRC: cowlicks@irc.freenode.net. I'm in #scipy.  
 I do my version control as [cowlicks on GitHub](https://github.com/cowlicks)  
 [Twitter](https://twitter.com/cwlcks)  
@@ -37,7 +35,7 @@ Degree: two degrees, B.S. Math and Physics
 
 
 # Timeline
-I've shifted the Coding period to start on May 27th (with the consent of my mentor).
+I've shifted the Coding period to start on May 27th (with the consent of my mentor) and end earlier so I can return to school.
 
 #### Before May 27th.
 * Familiarizing myself with scipy.sparse by investigating bug reports, reading documentation, etc.
@@ -54,10 +52,14 @@ In order:
 
 #### NumPy interactions -- July 8th to August 26th (7 weeks)
 In order:
-* Modify NumPy universal function to be aware of sparse matrix types. (3 weeks)
+* Modify NumPy universal functions (`ufuncs`) to be aware of sparse matrix types. (2 weeks)
+* Add sparse matrix method to handle calls from `ufuncs` (5 weeks)
+    * `ufuncs` that should just operate on the dense form of the sparse matrix.
+    * Implement sparse forms of the binary ufuncs that should broadcast.
+    * Test suite for all the sparse matrix methods which correspond to ufuncs.
 * Mid-term evaluation, July 29th -- deliverables are:
     * bool spec implemented
-    * Have at least one sparse matrix method that Numpy a numpy ufunc will dispatch to.
+    * Have at least one sparse matrix method that a NumPy ufunc will dispatch to.
 * Modify binary operation methods for the ufuncs to dispatch to. (2 weeks)
 * Write test suite for Numpy ufunc and sparse matrix interactions for sparse/dense and sparse/sparse combinations. (2 weeks)
 
@@ -70,9 +72,11 @@ In order:
 * Use my now vast knowledge of Scipy to be a productive member of the community. 
 
 #### bonus
-* Write spec for how to add new sparse matrix types to the existing zoo.
+Things I would like to try to fit in somewhere. Roughly in order of preference.
 * axis arguments for min(), max().
 * multidimensional array indexing 
+* performance improvements
+* Write spec for how to add new sparse matrix types to the existing zoo.
 * Represent the LU factorization obtained via SuperLU as actual sparse matrices rather than in SuperLU's internal format.
 * 64 bit indices.
-* performance improvements
+
