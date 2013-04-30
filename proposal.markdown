@@ -3,7 +3,9 @@
 ##Abstract
 This proposal has two parts:
 
-1. Add support for bool dtype to sparse matrices, as well as boolean operations so that sparse matrices behave more like NumPy ndarrays.
+1. Add support for bool dtype to sparse matrices, as well as boolean operations so that sparse matrices behave more like NumPy ndarrays.  
+
+Currently, sparse matrices cannot support boolean operations
 
 2. Improve interaction of sparse matrix objects and other types. Especially NumPy ndarray objects and ufuncs. This will allow use of numpy.dot, .multiply, etc. making generic sparse and dense matrix code much easier to write. This will also involve adding new functions/methods (similar to numpy ufuncs) to the sparse package which will improve it's usabilty.
 
@@ -49,19 +51,21 @@ In order:
 * code review and unit tests (1 week)
 * Implement boolean operations (2 weeks)
 * code review and unit tests (1 week)
+* Reduce this to 5 weeks?
 
 #### NumPy interactions -- July 8th to August 26th (7 weeks)
 In order:
 * Modify NumPy universal functions (`ufuncs`) to be aware of sparse matrix types. (2 weeks)
-* Add sparse matrix method to handle calls from `ufuncs` (5 weeks)
-    * `ufuncs` that should just operate on the dense form of the sparse matrix.
-    * Implement sparse forms of the binary ufuncs that should broadcast.
+* ??? Add a week or more specifically for consolidating pieces of the sparse interface, although consolidation is assumed in the adding ufunc functions. (1 week)
+* Add sparse matrix functions(or methods) to handle calls from `ufuncs` (5 weeks)
+    * `ufuncs` that should just operate on the dense form of the sparse matrix.    
+    * Add C++ code for row-wise or column-wise broadcasting.
+    * Implement sparse forms of the binary ufuncs that should broadcast. 
     * Test suite for all the sparse matrix methods which correspond to ufuncs.
 * Mid-term evaluation, July 29th -- deliverables are:
     * bool spec implemented
     * Have at least one sparse matrix method that a NumPy ufunc will dispatch to.
-* Modify and add binary operation methods for the ufuncs to dispatch to. (3 weeks)
-* Wrap up. test suite for Numpy ufunc and sparse matrix interactions for sparse/dense and sparse/sparse combinations. (1 weeks)
+* Wrap up. test suite for Numpy ufunc and sparse matrix interactions for sparse/dense and sparse/sparse combinations. (1 week)
 
 #### Onward -- post August 27th
 My school begins on August 29th, so I'll cut work to around 1/3 to 1/4 of before. So I will continue with a few features, and fixing bugs etc for the remaining weeks at a slow pace.  
@@ -72,6 +76,7 @@ Final evaluation, Sept 23rd -- deliverables are:
 * NumPy interaction spec implemented.
     * Many Numpy ufuncs work with sparse matricies, and sparse dense combinations. 
     * New and improved functions/methods in the sparse package (add, dot, divide, multiply, etc.)
+    * A nicer interface and codebase with less repeated code. 
 
 When all this is done I will use my now vast knowledge of Scipy to be a productive member of the community :)
 
