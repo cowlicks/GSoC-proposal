@@ -5,7 +5,7 @@ This proposal has two parts:
 
 1. Add support for bool dtype to sparse matrices, as well as boolean operations so that sparse matrices behave more like NumPy ndarrays.
 
-2. Improve interaction of sparse matrix objects and other types. Especially NumPy ndarray objects and ufuncs. This will allow use of numpy.dot, .multiply, etc. making generic sparse and dense matrix code much easier to write.
+2. Improve interaction of sparse matrix objects and other types. Especially NumPy ndarray objects and ufuncs. This will allow use of numpy.dot, .multiply, etc. making generic sparse and dense matrix code much easier to write. This will also involve adding new functions/methods (similar to numpy ufuncs) to the sparse package which will improve it's usabilty.
 
 Both of these will be implemented according to separate specifications (written with community input), and testing suites.
 
@@ -60,16 +60,20 @@ In order:
 * Mid-term evaluation, July 29th -- deliverables are:
     * bool spec implemented
     * Have at least one sparse matrix method that a NumPy ufunc will dispatch to.
-* Modify binary operation methods for the ufuncs to dispatch to. (2 weeks)
-* Write test suite for Numpy ufunc and sparse matrix interactions for sparse/dense and sparse/sparse combinations. (2 weeks)
+* Modify and add binary operation methods for the ufuncs to dispatch to. (3 weeks)
+* Wrap up. test suite for Numpy ufunc and sparse matrix interactions for sparse/dense and sparse/sparse combinations. (1 weeks)
 
 #### Onward -- post August 27th
-* My school begins on August 29th, so I'll cut work to around 1/3 to 1/4 of before
-* Continue with features, bugs etc for the remaining weeks. slow pace.
-* Final evaluation, Sept 23rd -- deliverables are:
-   * bool spec implemented
-   * NumPy interaction spec implemented.
-* Use my now vast knowledge of Scipy to be a productive member of the community. 
+My school begins on August 29th, so I'll cut work to around 1/3 to 1/4 of before. So I will continue with a few features, and fixing bugs etc for the remaining weeks at a slow pace.  
+Final evaluation, Sept 23rd -- deliverables are:
+* bool spec implemented, along with documentation and test suite. 
+    * support for bool dtype
+    * support for boolean operations
+* NumPy interaction spec implemented.
+    * Many Numpy ufuncs work with sparse matricies, and sparse dense combinations. 
+    * New and improved functions/methods in the sparse package (add, dot, divide, multiply, etc.)
+
+When all this is done I will use my now vast knowledge of Scipy to be a productive member of the community :)
 
 #### bonus
 Things I would like to try to fit in somewhere. Roughly in order of preference.
@@ -79,4 +83,3 @@ Things I would like to try to fit in somewhere. Roughly in order of preference.
 * Write spec for how to add new sparse matrix types to the existing zoo.
 * Represent the LU factorization obtained via SuperLU as actual sparse matrices rather than in SuperLU's internal format.
 * 64 bit indices.
-
