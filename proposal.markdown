@@ -7,7 +7,7 @@ This proposal has two parts:
 
 Currently, sparse matrices cannot support boolean operations
 
-2. Improve interaction of sparse matrix objects and other types. Especially NumPy ndarray objects and ufuncs. This will allow use of numpy.dot, .multiply, etc. making generic sparse and dense matrix code much easier to write. This will also involve adding new functions/methods (similar to numpy ufuncs) to the sparse package which will improve it's usabilty.
+2. Improve interaction of sparse matrix objects and other types. Especially NumPy ndarray objects and ufuncs. This will make numpy.dot, .multiply, etc. work with sparse matrices, making generic sparse and dense matrix code much easier to write. This will also involve adding new functions/methods (similar to numpy ufuncs) to the sparse package which will improve it's usabilty.
 
 Both of these will be implemented according to separate specifications (written with community input), and testing suites.
 
