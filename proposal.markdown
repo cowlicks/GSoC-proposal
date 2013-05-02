@@ -1,7 +1,8 @@
 #Improvements to the sparse package of Scipy: support for bool dtype and better interaction with NumPy
 
 ##Abstract
-This proposal has two parts:
+The scipy sparse package is used extensively in other projects like scikit-learn, and is integrated with NumPy, SymPy, and Sage.
+However it leaves a lot to be desired. There is no support for boolean sparse matrices, and boolean operations on sparse matrices return inconsistent results. See [these]( http://projects.scipy.org/scipy/ticket/1533) [examples](http://projects.scipy.org/scipy/ticket/991). The sparse matrices also have problems when used with NumPy ufuncs and ndarrays (see this ticket which I did some work on, and [these](http://projects.scipy.org/scipy/ticket/1598)). The second part of this proposal is to remedy this. So writing code combining sparse dense matrices will be easier, and making the sparse codebase easier to maintain.
 
 1. Add support for bool dtype to sparse matrices, as well as boolean operations so that sparse matrices behave more like NumPy ndarrays.  
 
