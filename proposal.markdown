@@ -11,6 +11,8 @@ Both of these will be implemented according to separate specifications (written 
 
 ## Student Information
 Name: Blake Griffith  
+email: [blake.a.griffith@gmail.com](mailto:blake.a.griffith@gmail.com)  
+phone: (713) 702-1366  
 IRC: [cowlicks@irc.freenode.net](mailto:cowlicks@irc.freenode.net). I'm in #scipy.  
 I do my version control as [cowlicks on GitHub](https://github.com/cowlicks)  
 [Twitter](https://twitter.com/cwlcks)  
